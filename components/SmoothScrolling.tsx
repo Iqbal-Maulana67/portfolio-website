@@ -55,7 +55,7 @@ export default function SmoothScroll({
           scroller: "#scroll-container",
           pin: true,
           scrub: true,
-          start: "top",
+          start: "top top",
           end: () => "+=" + (pinWrap.scrollWidth - window.innerWidth),
           invalidateOnRefresh: true,
           onUpdate(self) {
@@ -72,7 +72,6 @@ export default function SmoothScroll({
           trigger: ".project-header",
           // scrub: true,
           toggleActions: "play reverse play none",
-          markers: true,
         },
       });
 
