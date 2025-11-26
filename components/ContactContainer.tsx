@@ -1,6 +1,6 @@
 "use client";
 
-export default function ContactContainer({ data }) {
+export default function ContactContainer({ data }: { data: any }) {
   return (
     <a href={data.url}>
       <div className="p-2 mr-3 rounded-xl contact-logo-container flex justify-center items-center">

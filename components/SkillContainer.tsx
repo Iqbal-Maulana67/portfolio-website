@@ -1,6 +1,6 @@
 "use client";
 
-export default function SkillContainer({ data }) {
+export default function SkillContainer({ data }: { data: any }) {
   return (
     <div
       id="skill-container"
