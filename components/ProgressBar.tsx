@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect } from "react";
 
-export default function ProgressBar({ loadingBar }) {
+export default function ProgressBar({ loadingBar } : {loadingBar : any}) {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
