@@ -14,12 +14,12 @@ export default function Home() {
 
         <Homepage />
         <ProjectPage />
-        <section className="h-fit w-full flex mt-5 p-5 justify-start">
-          <div className="w-1/3">
+        <section className="h-fit w-full flex flex-col lg:flex-row mt-5 p-5 justify-start">
+          <div className="lg:w-1/3 w-full">
             <AboutPage />
             <ContactPage />
           </div>
-          <div className="w-2/3">
+          <div className="lg:w-2/3 hidden lg:block">
             <SkillPage />
           </div>
         </section>

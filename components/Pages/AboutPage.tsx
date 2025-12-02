@@ -6,30 +6,32 @@ import { useEffect } from "react";
 
 export default function AboutPage() {
   useEffect(() => {
+    let mm = gsap.matchMedia();
     const line = document.querySelector(".about-line");
     const header = document.querySelector("#about-header");
     gsap.registerPlugin(ScrollTrigger);
+    mm.add("(min-width: 768px)", () => {
+      gsap.to(line, {
+        left: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: document.getElementById("about-header"),
+          start: "-50% top",
+          end: "50% bottom",
+        },
+      });
 
-    gsap.to(line, {
-      left: 0,
-      opacity: 1,
-      duration: 1,
-      scrollTrigger: {
-        trigger: document.getElementById("about-header"),
-        start: "-50% top",
-        end: "50% bottom",
-      },
-    });
-
-    gsap.to(header, {
-      transform: "translateY(0)",
-      opacity: 1,
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: header,
-        start: "100px top",
-        end: "50% bottom",
-      },
+      gsap.to(header, {
+        transform: "translateY(0)",
+        opacity: 1,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: header,
+          start: "100px top",
+          end: "50% bottom",
+        },
+      });
     });
   });
 

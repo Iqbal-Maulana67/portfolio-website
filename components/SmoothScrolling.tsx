@@ -10,76 +10,78 @@ export default function SmoothScroll({
   children: React.ReactNode;
 }) {
   useEffect(() => {
+    let mm = gsap.matchMedia();
     let locoScroll: any;
 
     async function initLoco() {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
 
-      gsap.registerPlugin(ScrollTrigger);
+      mm.add("(min-width: 768px)", () => {
+        gsap.registerPlugin(ScrollTrigger);
 
-      const el = document.querySelector<HTMLElement>("#scroll-container");
-      if (!el) return;
+        const el = document.querySelector<HTMLElement>("#scroll-container");
+        if (!el) return;
 
-      locoScroll = new LocomotiveScroll({
-        el,
-      });
+        locoScroll = new LocomotiveScroll({
+          el,
+        });
 
-      locoScroll.on("scroll", ScrollTrigger.update);
+        locoScroll.on("scroll", ScrollTrigger.update);
 
-      ScrollTrigger.scrollerProxy(el, {
-        scrollTop(value) {
-          return arguments.length
-            ? locoScroll.scrollTo(value, 0, 0)
-            : locoScroll.scroll.instance.scroll.y;
-        },
-        getBoundingClientRect() {
-          return {
-            top: 0,
-            left: 0,
-            width: window.innerWidth,
-            height: window.innerHeight,
-          };
-        },
-        pinType: el.style.transform ? "transform" : "fixed",
-      });
-
-      let pinWrap = document.querySelector<HTMLElement>(".pin-wrap");
-      if (!pinWrap) return;
-      let pinWrapWidth = pinWrap.offsetWidth;
-
-      gsap.to(".pin-wrap", {
-        x: () => -(pinWrap.scrollWidth - window.innerWidth),
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#sectionPin",
-          scroller: "#scroll-container",
-          pin: true,
-          scrub: true,
-          start: "top top",
-          end: () => "+=" + (pinWrap.scrollWidth - window.innerWidth),
-          invalidateOnRefresh: true,
-          onUpdate(self) {
-            console.log("Updating:", self.progress);
+        ScrollTrigger.scrollerProxy(el, {
+          scrollTop(value) {
+            return arguments.length
+              ? locoScroll.scrollTo(value, 0, 0)
+              : locoScroll.scroll.instance.scroll.y;
           },
-        },
-      });
+          getBoundingClientRect() {
+            return {
+              top: 0,
+              left: 0,
+              width: window.innerWidth,
+              height: window.innerHeight,
+            };
+          },
+          pinType: el.style.transform ? "transform" : "fixed",
+        });
 
-      gsap.to(".project-header", {
-        x: -50,
-        opacity: 1,
-        duration: 2,
-        scrollTrigger: {
-          trigger: ".project-header",
-          // scrub: true,
-          toggleActions: "play reverse play none",
-        },
-      });
+        let pinWrap = document.querySelector<HTMLElement>(".pin-wrap");
+        if (!pinWrap) return;
 
-      ScrollTrigger.addEventListener("refresh", () => {
-        locoScroll.update();
-        console.log("Loco updated");
+        gsap.to(".pin-wrap", {
+          x: () => -(pinWrap.scrollWidth - window.innerWidth),
+          ease: "none",
+          scrollTrigger: {
+            trigger: "#sectionPin",
+            scroller: "#scroll-container",
+            pin: true,
+            scrub: true,
+            start: "top top",
+            end: () => "+=" + (pinWrap.scrollWidth - window.innerWidth),
+            invalidateOnRefresh: true,
+            onUpdate(self) {
+              console.log("Updating:", self.progress);
+            },
+          },
+        });
+
+        gsap.to(".project-header", {
+          x: -50,
+          opacity: 1,
+          duration: 2,
+          scrollTrigger: {
+            trigger: ".project-header",
+            // scrub: true,
+            toggleActions: "play reverse play none",
+          },
+        });
+
+        ScrollTrigger.addEventListener("refresh", () => {
+          locoScroll.update();
+          console.log("Loco updated");
+        });
+        ScrollTrigger.refresh();
       });
-      ScrollTrigger.refresh();
     }
 
     initLoco();

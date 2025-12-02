@@ -83,52 +83,81 @@ body {
   }
 } */
 
-#sectionPin {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  top: 0;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  background: #111;
+/* md-2xl */
+@media screen and (min-width: 768px) {
+  #sectionPin {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background: #111;
+  }
+
+  .pin-wrap {
+    width: 250vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 10vw;
+  }
+
+  #about-header {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  .about-line {
+    opacity: 0;
+    position: relative;
+    left: -10px;
+    border: solid 1px #ffffff;
+  }
+
+  .contact-line {
+    opacity: 0;
+    position: relative;
+    left: -10px;
+    border: solid 1px #ffffff;
+  }
+
+  #contact-header {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
 
-.pin-wrap {
-  width: 250vw;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 50px 10vw;
+/* sm screen */
+@media screen and (max-width: 768px) {
+  #sectionPin {
+    background: #111;
+  }
+  .pin-wrap {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 5vw;
+    height: fit-content;
+  }
+
+  .about-line {
+    position: relative;
+    border: solid 1px #ffffff;
+  }
+
+  .contact-line {
+    position: relative;
+    left: -10px;
+    border: solid 1px #ffffff;
+  }
 }
 
 .project-container {
   border: #39403b 1px solid;
   border-radius: 0.75rem;
-}
-
-.about-line {
-  opacity: 0;
-  position: relative;
-  left: -10px;
-  border: solid 1px #ffffff;
-}
-
-#about-header {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
-.contact-line {
-  opacity: 0;
-  position: relative;
-  left: -10px;
-  border: solid 1px #ffffff;
-}
-
-#contact-header {
-  opacity: 0;
-  transform: translateY(-10px);
 }
 
 #skill-container {
@@ -163,7 +192,7 @@ body {
   background-color: rgba(17, 17, 17, 0.8);
 }
 
-.contact-logo-container span{
+.contact-logo-container span {
   opacity: 0;
 }
 
@@ -173,13 +202,12 @@ body {
   cursor: pointer;
 }
 
-.contact-logo-container:hover img{
+.contact-logo-container:hover img {
   z-index: -1;
   transition-duration: 0.25s;
 }
 
-.contact-logo-container:hover span{
+.contact-logo-container:hover span {
   opacity: 1;
   transition-duration: 0.25s;
 }
-

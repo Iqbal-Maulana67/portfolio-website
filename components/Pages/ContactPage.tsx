@@ -41,7 +41,7 @@ export default function ContactPage() {
         </h2>
         <div className="contact-line"></div>
       </div>
-      <div className="mt-5 flex flex-wrap">
+      <div className="mt-5 flex flex-wrap justify-center items-center lg:justify-start lg:items-start">
         <ContactContainer
           data={{
             url: "mailto:im.fiekri@gmail.com?subject=Hello%20Iqbal&body=I%20want%20to%20contact%20you.",
