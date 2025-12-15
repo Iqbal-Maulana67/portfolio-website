@@ -61,6 +61,38 @@ export default function SkillPage() {
             text: "Vue",
           }}
         />
+        <SkillContainer
+          data={{
+            imgUrl: "/icons/golang.svg",
+            imgColor: "#fff",
+            width: "70%",
+            text: "Go / Gin Framework",
+          }}
+        />
+        <SkillContainer
+          data={{
+            imgUrl: "/icons/docker.svg",
+            imgColor: "#fff",
+            width: "70%",
+            text: "Docker",
+          }}
+        />
+        <SkillContainer
+          data={{
+            imgUrl: "/icons/postgres.svg",
+            imgColor: "#fff",
+            width: "70%",
+            text: "PostgreSQL",
+          }}
+        />
+        <SkillContainer
+          data={{
+            imgUrl: "/icons/mongodb.svg",
+            imgColor: "#fff",
+            width: "70%",
+            text: "MongoDB",
+          }}
+        />
       </div>
   );
 }

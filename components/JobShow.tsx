@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 
 const jobDesk = [
-  "Backend Developer",
-  "Fullstack Developer",
+  "Back-end Developer",
+  "Front-end Developer",
   "Discord Bot Developer",
   "Telegram Bot Developer",
 ];
