@@ -19,9 +19,7 @@ export default function Home() {
             <AboutPage />
             <ContactPage />
           </div>
-          <div className="w-full hidden md:block">
-            <hr className="my-5 border-gray-700" />
-          </div>
+          <hr className="my-5 border-gray-700 hidden md:block" />
           <div className="lg:w-2/3 hidden lg:block md:block">
             <SkillPage />
           </div>
