@@ -24,6 +24,14 @@ export default function SkillPage() {
         />
         <SkillContainer
           data={{
+            imgUrl: "/icons/golang.svg",
+            imgColor: "#fff",
+            width: "70%",
+            text: "Go / Gin Framework",
+          }}
+        />
+        <SkillContainer
+          data={{
             imgUrl: "/icons/django.svg",
             imgColor: "#fff",
             width: "80%",
@@ -59,14 +67,6 @@ export default function SkillPage() {
             imgColor: "#fff",
             width: "70%",
             text: "Vue",
-          }}
-        />
-        <SkillContainer
-          data={{
-            imgUrl: "/icons/golang.svg",
-            imgColor: "#fff",
-            width: "70%",
-            text: "Go / Gin Framework",
           }}
         />
         <SkillContainer

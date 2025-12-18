@@ -44,16 +44,16 @@ export default function AboutPage() {
         <div className="about-line"></div>
       </div>
       <div className="mt-5">
-        <span className="text-justify">
-          I’m a backend/full-stack developer who thrives on solving problems
+        <p className="text-justify">
+          I’m a back-end/front-end developer who thrives on solving problems
           through clean architecture, automation, and well-designed APIs. I’ve
-          developed and deployed multiple production-ready systems — including
-          bots, dashboards, and web platforms — and I’m comfortable taking
-          ownership of a feature from concept to delivery. I work fast,
-          communicate well, and always prioritize code quality and long-term
-          maintainability. I’m continuously learning, improving, and pushing
-          myself to become the kind of developer people can depend on.
-        </span>
+          developed and deployed multiple production-ready systems including
+          bots, dashboards, and web platforms, I’m comfortable taking ownership
+          of a feature from concept to delivery. I work fast, communicate well,
+          and always prioritize code quality and long-term maintainability. I’m
+          continuously learning, improving, and pushing myself to become the
+          kind of developer people can depend on.
+        </p>
       </div>
     </div>
   );
