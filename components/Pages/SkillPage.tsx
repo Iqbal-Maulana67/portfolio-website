@@ -93,6 +93,14 @@ export default function SkillPage() {
             text: "MongoDB",
           }}
         />
+        <SkillContainer
+          data={{
+            imgUrl: "/icons/firebase.svg",
+            imgColor: "#fff",
+            width: "70%",
+            text: "Firebase",
+          }}
+        />
       </div>
   );
 }
