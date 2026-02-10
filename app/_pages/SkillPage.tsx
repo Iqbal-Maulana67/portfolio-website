@@ -1,7 +1,7 @@
 "use client";
 
-import ProgressBar from "../ProgressBar";
-import SkillContainer from "../SkillContainer";
+import ProgressBar from "../../components/ProgressBar";
+import SkillContainer from "../../components/SkillContainer";
 
 export default function SkillPage() {
   return (

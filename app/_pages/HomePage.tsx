@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import JobShow from "../JobShow";
+import JobShow from "../../components/JobShow";
 
 export default function Homepage() {
   return (

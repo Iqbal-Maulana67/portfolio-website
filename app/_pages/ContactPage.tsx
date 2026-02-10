@@ -3,7 +3,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect } from "react";
-import ContactContainer from "../ContactContainer";
+import ContactContainer from "../../components/ContactContainer";
 
 export default function ContactPage() {
   useEffect(() => {

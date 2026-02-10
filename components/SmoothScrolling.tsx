@@ -16,6 +16,7 @@ export default function SmoothScroll({
     async function initLoco() {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
 
+
       mm.add("(min-width: 768px)", () => {
         gsap.registerPlugin(ScrollTrigger);
 
@@ -24,6 +25,7 @@ export default function SmoothScroll({
 
         locoScroll = new LocomotiveScroll({
           el,
+          
         });
 
         locoScroll.on("scroll", ScrollTrigger.update);
