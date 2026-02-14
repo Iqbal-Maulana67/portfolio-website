@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -224,8 +224,6 @@ body {
   }
 }
 
-
-
 .fade-up {
   animation: fadeUp 0.8s ease-out forwards;
 }
@@ -242,6 +240,7 @@ body {
 .glass {
   backdrop-filter: blur(10px);
 }
+
 
 .gradient-border-hover:hover {
   border-width: 1px;
