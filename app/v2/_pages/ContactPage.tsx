@@ -1,11 +1,30 @@
+'use client';
+
+import { useFadeInView } from '@/hooks/useInFadeView';
+
 export default function ContactPageV2() {
+  const bgFade = useFadeInView();
+  const contentFade = useFadeInView();
+
   return (
     <div className="relative flex flex-col items-center justify-center overflow-hidden mb-10">
-      <div className="container px-4 md:px-6 z-10 items-center justify-center">
+      <div
+        ref={bgFade.ref}
+        className={`
+          container px-4 md:px-6 z-10 items-center justify-center
+          ${bgFade.visible ? 'animate-[fadeUp_0.5s_ease-out_forwards] opacity-100' : 'opacity-0'}
+          `}
+      >
         <div className="relative rounded-3xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-cyan-500/20"></div>
           <div className="absolute inset-0 backdrop-blur-sm"></div>
-          <div className="relative z-10 py-16 px-6 md:px-12 text-center">
+          <div
+            ref={contentFade.ref}
+            className={`
+              relative z-10 py-16 px-6 md:px-12 text-center
+              ${contentFade.visible ? 'animate-[fadeUp_0.5s_ease-out_forwards] opacity-100' : 'opacity-0'}
+              `}
+          >
             <div
               className="inline-flex items-center rounded-full 
             border text-xs font-semibold transition-colors 
@@ -45,7 +64,10 @@ export default function ContactPageV2() {
                   GitHub
                 </div>
               </a>
-              <a href="mailto:im.fiekri@gmail.com?subject=Hello%20Iqbal&body=I%20want%20to%20contact%20you." target="_blank">
+              <a
+                href="mailto:im.fiekri@gmail.com?subject=Hello%20Iqbal&body=I%20want%20to%20contact%20you."
+                target="_blank"
+              >
                 <div
                   className="inline-flex items-center rounded-full border 
                 font-semibold transition-colors focus:outline-none focus:ring-2 
