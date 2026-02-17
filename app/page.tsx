@@ -1,6 +1,7 @@
-import ContactPageV2 from "@/app/v2/_pages/ContactPage";
-import HomePageV2 from "@/app/v2/_pages/HomePage";
-import TechPage from "@/app/v2/_pages/TechPage";
+import ContactPageV2 from '@/app/v2/_pages/ContactPage';
+import HomePageV2 from '@/app/v2/_pages/HomePage';
+import TechPage from '@/app/v2/_pages/TechPage';
+import FooterPage from './v2/_pages/Footer';
 
 export default function HomeV2() {
   return (
@@ -8,6 +9,7 @@ export default function HomeV2() {
       <HomePageV2 />
       <TechPage />
       <ContactPageV2 />
+      <FooterPage />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useFadeInView } from '@/hooks/useInFadeView';
+import Image from 'next/image';
 
 export default function ContactPageV2() {
   const bgFade = useFadeInView();
@@ -48,9 +49,11 @@ export default function ContactPageV2() {
                 font-semibold transition-colors focus:outline-none focus:ring-2 
                 focus:ring-ring focus:ring-offset-2 mb-4 bg-green-500/20 
                 hover:bg-green-500/30 text-foreground border-white/20 py-1.5 
-                px-4 text-sm cursor-pointer"
+                px-4 text-sm cursor-pointer gap-2"
                 >
                   Whatsapp
+
+                  <Image src={"/icons/whatsapp.svg"} alt='' width={15} height={10}/>
                 </div>
               </a>
               <a href="https://wa.me/+6283833848095" target="_blank">
@@ -59,9 +62,10 @@ export default function ContactPageV2() {
                 font-semibold transition-colors focus:outline-none focus:ring-2 
                 focus:ring-ring focus:ring-offset-2 mb-4 bg-gray-900/10 
                 hover:bg-gray-900/40 text-foreground border-white/20 py-1.5 
-                px-4 text-sm cursor-pointer"
+                px-4 text-sm cursor-pointer gap-2"
                 >
                   GitHub
+                  <Image src={"/icons/github.svg"} alt='' width={15} height={10}/>
                 </div>
               </a>
               <a
@@ -73,9 +77,10 @@ export default function ContactPageV2() {
                 font-semibold transition-colors focus:outline-none focus:ring-2 
                 focus:ring-ring focus:ring-offset-2 mb-4 bg-blue-600/10 
                 hover:bg-blue-600/40 text-foreground border-white/20 py-1.5 
-                px-4 text-sm cursor-pointer"
+                px-4 text-sm cursor-pointer gap-2"
                 >
                   Email
+                  <Image src={"/icons/email.svg"} alt='' width={15} height={10}/>
                 </div>
               </a>
             </div>
