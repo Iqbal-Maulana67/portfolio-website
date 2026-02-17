@@ -1,28 +1,29 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
-import "./globals.css";
-import Providers from "./providers";
-import BodyBackground from "@/components/v2/body/BodyBackground";
-import Navbar from "@/components/v2/nav/navbar";
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono, Poppins } from 'next/font/google';
+import './globals.css';
+import Providers from './providers';
+import BodyBackground from '@/components/v2/body/BodyBackground';
+import Navbar from '@/components/v2/nav/navbar';
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
+  subsets: ['latin'],
+  weight: ['300', '400', '600', '700'],
 });
 
 export const metadata: Metadata = {
-  title: "Imfiekri",
-  description: "",
+  title: 'Imfiekri',
+  description: '',
 };
 
 export default function RootLayout({
@@ -36,11 +37,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased`}
       >
-        <BodyBackground/>
+        <Analytics />
+        <BodyBackground />
         <Navbar />
-        <Providers>
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
