@@ -22,7 +22,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Imfiekri',
+  title: 'Moch. Iqbal Maulana Fiekri - Fullstack Developer',
   description: '',
 };
 

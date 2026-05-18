@@ -35,7 +35,7 @@ export default function HomePageV2() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-2">
             <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-cyan-300/30 hover:bg-cyan-300/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
-              Backend Developer
+              Back-end Developer
             </div>
             <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-cyan-300/30 hover:bg-cyan-300/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
               Front-end Developer
