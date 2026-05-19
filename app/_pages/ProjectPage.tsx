@@ -1,6 +1,6 @@
 "use client";
 
-export default function ProjectPage() {
+export default function ProjectSection() {
   return (
     <section id="sectionPin">
       <div className="pin-wrap">

@@ -32,7 +32,7 @@ export default function Navbar() {
       `}
     >
       <div className="flex justify-between items-center px-10">
-        <Link href="/home" className="text-lg font-bold">
+        <Link href="/" className="text-lg font-bold">
           IM.FIEKRI
         </Link>
 
