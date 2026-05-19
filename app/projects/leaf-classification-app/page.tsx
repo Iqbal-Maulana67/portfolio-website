@@ -2,6 +2,7 @@
 
 import SwiperCustomNav from '@/components/v2/ui/project-gallery';
 import { useFadeInView } from '@/hooks/useInFadeView';
+import Link from 'next/link';
 import 'swiper/css';
 
 export default function Leaf() {
@@ -17,22 +18,24 @@ export default function Leaf() {
           `}
       >
         <div className="relative max-w-5xl mx-auto mt-20">
-          <div className="flex items-center group cursor-pointer">
-            <svg
-              version="1.1"
-              id="Layer_1"
-              viewBox="0 0 476.213 476.213"
-              className=" w-5 group-hover:w-6 mr-5 fill-gray-400 group-hover:fill-white duration-200"
-            >
-              <g id="SVGRepo_iconCarrier">
-                {' '}
-                <polygon points="476.213,223.107 57.427,223.107 151.82,128.713 130.607,107.5 0,238.106 130.607,368.714 151.82,347.5 57.427,253.107 476.213,253.107 "></polygon>{' '}
-              </g>
-            </svg>
-            <span className="text-sm text-gray-400 group-hover:text-white duration-200">
-              Back to Project
-            </span>
-          </div>
+          <Link href={'/projects'}>
+            <div className="flex items-center group cursor-pointer">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                viewBox="0 0 476.213 476.213"
+                className=" w-5 group-hover:w-6 mr-5 fill-gray-400 group-hover:fill-white duration-200"
+              >
+                <g id="SVGRepo_iconCarrier">
+                  {' '}
+                  <polygon points="476.213,223.107 57.427,223.107 151.82,128.713 130.607,107.5 0,238.106 130.607,368.714 151.82,347.5 57.427,253.107 476.213,253.107 "></polygon>{' '}
+                </g>
+              </svg>
+              <span className="text-sm text-gray-400 group-hover:text-white duration-200">
+                Back to Project
+              </span>
+            </div>
+          </Link>
           <div className="flex flex-wrap items-center gap-2 mt-5">
             <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#ac47ff]/30 hover:bg-[#ac47ff]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
               Featured

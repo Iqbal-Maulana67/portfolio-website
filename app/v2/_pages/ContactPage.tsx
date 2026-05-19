@@ -56,7 +56,7 @@ export default function ContactPageV2() {
                   <Image src={"/icons/whatsapp.svg"} alt='' width={15} height={10}/>
                 </div>
               </a>
-              <a href="https://wa.me/+6283833848095" target="_blank">
+              <a href="https://github.com/Iqbal-Maulana67" target="_blank">
                 <div
                   className="inline-flex items-center rounded-full border 
                 font-semibold transition-colors focus:outline-none focus:ring-2 
