@@ -28,6 +28,13 @@ export default function ProjectPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 mt-8 px-5">
           <ProjectContainer
+            thumbnailPath="/images/numes.png"
+            title="Numes Academy"
+            description="This digital platform is specifically designed to optimize transparency and accuracy of fund management within the SMA U BPPT Darus Sholah environtment"
+            techs={['Next.js', 'NestJS', 'SB Admin']}
+            link="/projects/numes-academy"
+          />
+          <ProjectContainer
             thumbnailPath="/images/leaf.png"
             title="Leaf Classification App"
             description="An apps that helps identifying plant throughout the plant's leaf and helps understanding the medical benefits of the plants."
@@ -41,13 +48,7 @@ export default function ProjectPage() {
             techs={['Python', 'Telegram Python Bot']}
             link="/projects/valk-bot"
           />
-          <ProjectContainer
-            thumbnailPath="/images/akus_cropped.png"
-            title="A-KUS"
-            description="This digital platform is specifically designed to optimize transparency and accuracy of fund management within the SMA U BPPT Darus Sholah environtment"
-            techs={['Laravel', 'Bootstrap', 'SB Admin']}
-            link="/projects/a-kus"
-          />
+          
         </div>
         <div className="glass rounded-2xl py-10 px-2 border border-white/10 text-center mx-8">
           <h2 className="text-2xl font-bold mb-4">Available for Collaboration</h2>
