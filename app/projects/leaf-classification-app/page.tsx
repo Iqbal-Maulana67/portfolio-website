@@ -61,13 +61,13 @@ export default function Leaf() {
           >
             Leaf Classification App
           </span>
-          <p className="text-xl text-gray-400 mt-2"></p>
-          <div className="w-full mt-20 flex justify-center">
+          <p className="text-xl text-gray-400 mt-2">Full-stack Developer</p>
+          <div className="w-full mt-8 flex justify-center">
             <img src="/images/leaf.png" alt="" className="rounded-2xl" />
           </div>
 
           <div className="w-full mt-20 flex flex-wrap justify-between overflow-hidden">
-            <div className="w-[70%] pr-5">
+            <div className="w-full md:w-[70%] pr-5">
               <p className="text-2xl font-bold">Overview</p>
               <p className="mt-5 text-md text-gray-400 text-justify">
                 An application that assists in identifying wild plants through
@@ -84,8 +84,7 @@ export default function Leaf() {
                 knowledge about herbal and medicinal plants.
               </p>
             </div>
-
-            <div className="w-[30%]">
+            <div className="w-full mt-10 md:w-[30%]  md:mt-0">
               <p className="text-2xl font-bold text-justify">Tech Stack</p>
               <div className="w-full overflow-hidden px-2 mt-5 ">
                 <div className="flex items-center">
@@ -113,7 +112,7 @@ export default function Leaf() {
             </div>
 
             <div className="w-full mt-10">
-              <p className="text-2xl font-bold text-justify">Project Gallery</p>
+              <p className="text-2xl font-bold text-justify mb-10">Project Gallery</p>
               <SwiperCustomNav />
             </div>
           </div>

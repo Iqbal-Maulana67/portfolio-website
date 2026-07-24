@@ -34,6 +34,13 @@ export default function ProjectPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           <ProjectContainer
+            thumbnailPath="/images/numes.png"
+            title="Numes Academy"
+            description="This platform is specifically designed to digitize and centralize the registration, delivery, and certification process of medical training programs under Nusantara Medika Solusindo."
+            techs={['Next.js', 'NestJS', 'SB Admin']}
+            link="/projects/numes-academy"
+          />
+          <ProjectContainer
             thumbnailPath="/images/leaf.png"
             title="Leaf Classification App"
             description="An apps that helps identifying plant throughout the plant's leaf and helps understanding the medical benefits of the plants."
@@ -46,13 +53,6 @@ export default function ProjectPage() {
             description="A telegram moderation bot handling a spam, content filtering, welcoming messages, user reports, log & audit, and etc."
             techs={['Python', 'Telegram Python Bot']}
             link="/projects/valk-bot"
-          />
-          <ProjectContainer
-            thumbnailPath="/images/akus_cropped.png"
-            title="A-KUS"
-            description="This digital platform is specifically designed to optimize transparency and accuracy of fund management within the SMA U BPPT Darus Sholah environtment"
-            techs={['Laravel', 'Bootstrap', 'SB Admin']}
-            link="/projects/a-kus"
           />
         </div>
       </div>
