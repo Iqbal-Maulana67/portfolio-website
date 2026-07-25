@@ -37,7 +37,7 @@ export default function ProjectPage() {
             thumbnailPath="/images/numes.png"
             title="Numes Academy"
             description="This platform is specifically designed to digitize and centralize the registration, delivery, and certification process of medical training programs under Nusantara Medika Solusindo."
-            techs={['Next.js', 'NestJS', 'SB Admin']}
+            techs={['Next.js', 'NestJS']}
             link="/projects/numes-academy"
           />
           <ProjectContainer

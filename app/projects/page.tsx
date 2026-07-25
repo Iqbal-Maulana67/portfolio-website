@@ -31,7 +31,7 @@ export default function ProjectPage() {
             thumbnailPath="/images/numes.png"
             title="Numes Academy"
             description="This digital platform is specifically designed to optimize transparency and accuracy of fund management within the SMA U BPPT Darus Sholah environtment"
-            techs={['Next.js', 'NestJS', 'SB Admin']}
+            techs={['Next.js', 'NestJS']}
             link="/projects/numes-academy"
           />
           <ProjectContainer
