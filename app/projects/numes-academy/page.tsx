@@ -10,10 +10,10 @@ export default function Leaf() {
   const contentFade = useFadeInView();
 
   const slides = [
-    { id: 1, imgPath: '/images/leaf.png' },
-    { id: 2, imgPath: '/images/leaf_2.png' },
-    { id: 3, imgPath: '/images/leaf_3.png' },
-    { id: 4, imgPath: '/images/leaf_4.png' },
+    { id: 1, imgPath: '/images/numes.png' },
+    { id: 2, imgPath: '/images/numes_2.png' },
+    { id: 3, imgPath: '/images/numes_3.png' },
+    { id: 4, imgPath: '/images/numes_4.png' },
   ];
 
   return (
@@ -48,13 +48,10 @@ export default function Leaf() {
               Featured
             </div>
             <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#78C257]/30 hover:bg-[#78C257]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
-              Android
-            </div>
-            <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#ff6f00]/30 hover:bg-[#ff6f00]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
-              Machine Learning
+              Website
             </div>
             <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#0A2540]/30 hover:bg-[#0A2540]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
-              Created 2025
+              Created 2026
             </div>
           </div>
           <span
@@ -66,29 +63,32 @@ export default function Leaf() {
               text-5xl
             `}
           >
-            Leaf Classification App
+            Numes Academy
           </span>
           <p className="text-xl text-gray-400 mt-2">Full-stack Developer</p>
           <div className="w-full mt-8 flex justify-center">
-            <img src="/images/leaf.png" alt="" className="rounded-2xl" />
+            <img src="/images/numes.png" alt="" className="rounded-2xl" />
           </div>
 
           <div className="w-full mt-20 flex flex-wrap justify-between overflow-hidden">
             <div className="w-full md:w-[70%] pr-5">
               <p className="text-2xl font-bold">Overview</p>
               <p className="mt-5 text-md text-gray-400 text-justify">
-                An application that assists in identifying wild plants through
-                leaf image analysis and supports the understanding of their
-                medicinal benefits. The system is designed to automatically
-                classify plant species based on visual patterns from leaf images
-                using deep learning techniques, specifically a Convolutional
-                Neural Network with the ResNet-50 architecture. By doing so, it
-                helps users recognize medicinal plants more efficiently and
-                accurately compared to manual identification, while also
-                providing useful information about the potential health benefits
-                of each plant. This makes the application a practical tool for
-                plant identification and for promoting easier access to
-                knowledge about herbal and medicinal plants.
+                A digital platform that assists healthcare professionals and
+                institutions in accessing standardized medical training and
+                obtaining recognized certification. The system is designed to
+                centralize the entire training lifecycle—from program
+                registration and scheduling to online payment, learning
+                delivery, and digital certificate issuance—within a single
+                integrated web-based platform. By doing so, it helps
+                participants and institutions manage training more efficiently
+                and transparently compared to conventional manual processes,
+                while also ensuring that every issued certificate can be
+                verified for authenticity through a unique digital code. This
+                makes the platform a practical tool for professional development
+                in the medical field and for promoting easier access to
+                credible, verifiable training and certification for healthcare
+                workers across Indonesia.
               </p>
             </div>
             <div className="w-full mt-10 md:w-[30%]  md:mt-0">
@@ -99,8 +99,11 @@ export default function Leaf() {
                   <hr className="w-full text-gray-400" />
                 </div>
                 <div className="flex flex-wrap items-center gap-2 mt-2">
-                  <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#0553B1]/30 hover:bg-[#0553B1]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
-                    Flutter
+                  <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#353535]/30 hover:bg-[#353535]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
+                    Next.js
+                  </div>
+                  <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#00bcff]/30 hover:bg-[#00bcff]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
+                    Tailwinds
                   </div>
                 </div>
                 <div className="flex items-center mt-2">
@@ -108,11 +111,8 @@ export default function Leaf() {
                   <hr className="w-full text-gray-400" />
                 </div>
                 <div className="flex flex-wrap items-center gap-2 mt-2">
-                  <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#0c4b33]/30 hover:bg-[#0c4b33]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
-                    Django
-                  </div>
-                  <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#ff6f00]/30 hover:bg-[#ff6f00]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
-                    Tensorflow
+                  <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#353535]/30 hover:bg-[#353535]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
+                    Nest.js
                   </div>
                 </div>
               </div>

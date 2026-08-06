@@ -14,14 +14,10 @@ interface SlideItem {
   imgPath: string;
 }
 
+interface SwiperCustomNavProps {
+  slides: Array<SlideItem>;
+}
 // ─── Data ─────────────────────────────────────────────────────────────────────
-
-const slides: SlideItem[] = [
-  { id: 1, imgPath: '/images/leaf.png' },
-  { id: 2, imgPath: '/images/leaf_2.png' },
-  { id: 3, imgPath: '/images/leaf_3.png' },
-  { id: 4, imgPath: '/images/leaf_4.png' },
-];
 
 // ─── Icon Components ──────────────────────────────────────────────────────────
 
@@ -116,7 +112,7 @@ function ArrowButton({ direction, onClick, disabled }: ArrowButtonProps) {
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 
-export default function SwiperCustomNav() {
+export default function SwiperCustomNav({ slides }: SwiperCustomNavProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [mainSwiper, setMainSwiper] = useState<SwiperType | null>(null);
   const [isBeginning, setIsBeginning] = useState(true);
