@@ -27,7 +27,7 @@ export default function HomePageV2() {
             />{" "}
             Apps
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-10 ">
             I’m a full-stack developer who builds scalable, production-ready
             systems with clean architecture, well-designed APIs, and a strong
             focus on quality, ownership, and long-term main
