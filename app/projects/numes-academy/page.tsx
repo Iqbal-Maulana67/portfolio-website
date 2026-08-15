@@ -2,6 +2,7 @@
 
 import SwiperCustomNav from '@/components/v2/ui/project-gallery';
 import { useFadeInView } from '@/hooks/useInFadeView';
+import { ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import 'swiper/css';
 
@@ -90,6 +91,15 @@ export default function Leaf() {
                 credible, verifiable training and certification for healthcare
                 workers across Indonesia.
               </p>
+              <a
+                href="https://numesacademy.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="my-2 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-700 hover:to-cyan-600 text-white"
+              >
+                Live Demo
+                <ExternalLink size={15} />
+              </a>
             </div>
             <div className="w-full mt-10 md:w-[30%]  md:mt-0">
               <p className="text-2xl font-bold text-justify">Tech Stack</p>
@@ -111,7 +121,7 @@ export default function Leaf() {
                   <hr className="w-full text-gray-400" />
                 </div>
                 <div className="flex flex-wrap items-center gap-2 mt-2">
-                  <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#353535]/30 hover:bg-[#353535]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
+                  <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 bg-[#ea285c]/30 hover:bg-[#ea285c]/40 text-foreground border-white/20 py-1.5 px-4 text-xs">
                     Nest.js
                   </div>
                 </div>
