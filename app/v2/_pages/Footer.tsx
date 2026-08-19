@@ -12,7 +12,7 @@ export default function FooterPage() {
           `}
       >
         <div className="relative inset-0 pt-10">
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-3">
             <div className="flex flex-col gap-2">
               <h1 className="text-xl font-semibold">IMFIEKRI</h1>
               <div className="flex gap-2 justify-start items-center">
