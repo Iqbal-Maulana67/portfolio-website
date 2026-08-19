@@ -44,7 +44,7 @@ export default function TechPage() {
           dict={{
             image: '/icons/frontend.svg',
             headerName: 'Frontend',
-            list: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+            list: ['React', 'Next.js', 'Nuxt.js', 'Vue.js'],
             color: '#a74cff',
             className: `
               ${contentFade.visible ? 'animate-[fadeUp_0.5s_ease-out_forwards] opacity-100' : 'opacity-0'}
@@ -56,7 +56,7 @@ export default function TechPage() {
           dict={{
             image: '/icons/backend.svg',
             headerName: 'Backend',
-            list: ['Node.js', 'Express.js', 'Go', 'PostgreSQL'],
+            list: ['Laravel', 'Nest.js', 'Go', 'Django'],
             color: '#00d3f2',
             className: `
               ${contentFade.visible ? 'animate-[fadeUp_0.55s_ease-out_forwards] opacity-100' : 'opacity-0'}

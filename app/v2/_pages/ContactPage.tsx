@@ -1,6 +1,9 @@
 'use client';
 
 import { useFadeInView } from '@/hooks/useInFadeView';
+import Github from '@/public/icons/github.svg';
+import Whatsapp from '@/public/icons/whatsapp.svg';
+import Email from '@/public/icons/email.svg';
 import Image from 'next/image';
 
 export default function ContactPageV2() {
@@ -51,9 +54,8 @@ export default function ContactPageV2() {
                 hover:bg-green-500/30 text-foreground border-white/20 py-1.5 
                 px-4 text-sm cursor-pointer gap-2"
                 >
+                  <Whatsapp className="w-5 fill-[#67C15E] group-hover:fill-[#67C15E]/70 transition-all" />
                   Whatsapp
-
-                  <Image src={"/icons/whatsapp.svg"} alt='' width={15} height={10}/>
                 </div>
               </a>
               <a href="https://github.com/Iqbal-Maulana67" target="_blank">
@@ -64,8 +66,8 @@ export default function ContactPageV2() {
                 hover:bg-gray-900/40 text-foreground border-white/20 py-1.5 
                 px-4 text-sm cursor-pointer gap-2"
                 >
+                  <Github className="w-5 fill-white group-hover:fill-black" />
                   GitHub
-                  <Image src={"/icons/github.svg"} alt='' width={15} height={10}/>
                 </div>
               </a>
               <a
@@ -79,8 +81,8 @@ export default function ContactPageV2() {
                 hover:bg-blue-600/40 text-foreground border-white/20 py-1.5 
                 px-4 text-sm cursor-pointer gap-2"
                 >
+                  <Email className="w-5 stroke-blue-500 group-hover:stroke-blue-500/70 transition-all" />
                   Email
-                  <Image src={"/icons/email.svg"} alt='' width={15} height={10}/>
                 </div>
               </a>
             </div>
